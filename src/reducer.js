@@ -9,3 +9,8 @@ function counterReducer(state = { count: 0 }, action) {
             return state;
     };
 };
+
+function dispatch(action) {
+    console.log("dispatch")
+    state = counterReducer(state, action);
+}
