@@ -20,3 +20,5 @@ function render() {
     if (state !== undefined) { container.innerText = state.count; }
     console.log("render")
 }
+
+dispatch({ type: "@@INIT" });
