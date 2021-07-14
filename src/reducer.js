@@ -13,4 +13,10 @@ function counterReducer(state = { count: 0 }, action) {
 function dispatch(action) {
     console.log("dispatch")
     state = counterReducer(state, action);
+    render();
+}
+
+function render() {
+    if (state !== undefined) { container.innerText = state.count; }
+    console.log("render")
 }
